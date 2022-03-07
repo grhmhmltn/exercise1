@@ -1,0 +1,39 @@
+<div id="word">
+   Sonic
+</div>
+<div id="circle" class="circle">
+  <span>Circle</span>
+</div>
+
+
+<style>
+#word {
+  font-size:50px;
+  margin: 50vh 50vw;
+  text-align: center;
+}
+
+#circle
+{
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  border-radius:50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+span 
+{
+  display: none;
+}
+<!-- JavaScript -->
+</style>
+<script>
+var ball = document.querySelector(".circle");
+window.addEventListener("mousemove", event => {
+  var y = event.clientY;
+  var x = event.clientX;
+  ball.style.top = y+"px";
+  ball.style.left = x+"px";
+})
+<script>
